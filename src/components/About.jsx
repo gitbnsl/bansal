@@ -5,23 +5,10 @@ import pic1 from '../images/pic3.jpg'
 
 const About = () => {
 
-    // const prog = document.getElementsByClassName("progress");
-    // function Scrolldown() {
-    //     window.scroll(0,2000);
-
-    // }
-
-    // function Scrolldown() {
-    //     window.scroll(0, 300);
-    // }
-
-
-    // window.onload = Scrolldown;
-
-    // prog.style.width = '100%';
+    
     return (
         <>
-            <div className="container pt-5" id='about' data-aos="zoom">
+            <div className="container pt-5" id='about' data-aos="fade-down">
 
                 <div className="row">
                     <div className="col-md-4 text-center">
@@ -48,10 +35,7 @@ const About = () => {
                         </p>
                         <p className='txt'>I've worked hard in my education and now I'm ready to apply my knowledge into practice. While I don't have any real-life work experience, I've had a lot of exposure to the business environment. 
 </p>
-                        {/* <p className='text-start'><b>Name</b> : Sandeep Kumar Bansal</p> */}
-                        {/* <p className='text-start'><b>Age</b> : 22 </p> */}
-                        {/* <p className='text-start'><b>Qualification</b> : Bachelor's in Computer Aplication</p> */}
-                        {/* <p className='text-start'><b>Address</b> : V.P.O Bhater Teh. Mukerian Distt. Hoshairpur Punjab (144224)</p> */}
+                       
                     </div>
                 </div>
             </div>

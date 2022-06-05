@@ -29,8 +29,8 @@ const Navbar = () => {
                         </li> */}
                         <li>
                             <a href="#about" className="nav-link text-dark">
-                                <i className="bi bi-person-lines-fill"></i>
-                                About me
+                                <i className="bi bi-person-lines-fill mx-2"></i>
+                                About
                             </a>
                         </li>
                         <li>

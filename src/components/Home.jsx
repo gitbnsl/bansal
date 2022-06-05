@@ -37,7 +37,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="container my-5" data-aos="fade-in">
+            <div className="container my-5" data-aos="fade">
                 <div className="row">
                     <div className="col-md-6 text-center">
                         <div>

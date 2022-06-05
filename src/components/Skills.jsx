@@ -32,7 +32,7 @@ const Skills = () => {
     return (
         <>
 
-            <div className="container" data-aos="zoom-in" id='skills'>
+            <div className="container" data-aos="slide-up" id='skills'>
                 <div className="row my-5 p-3">
                     <h2 className='text-center my-5' id='frame'>Technical Skills <hr /></h2>
 

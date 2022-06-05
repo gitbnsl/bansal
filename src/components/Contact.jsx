@@ -25,22 +25,22 @@ const Contact = () => {
     }
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         console.log('click active')
 
         email.sendForm('service_x3zc6nk', 'template_xh65ho7', form.current, 'tXYQhNSTkw49_VQSu')
             .then((result) => {
                 console.log(result.text);
-                toast.success('Success message send successfully!');
+                toast.success('message send successfully');
             }, (error) => {
                 console.log(error.text);
-                toast.error('Failed to send message!');
+                toast.error('Failed to send message');
             });
     }
     return (
         <>
             <div id="contact" className="paddsection">
-                <div className="container p-5 mt-5">
+                <div className="container p-5 mt-5" data-aos="flip-down">
                     <div className="contact-block1">
                         <h2 className='text-center my-5'>GET IN TOUCH <hr /></h2>
                         <div className="row">
