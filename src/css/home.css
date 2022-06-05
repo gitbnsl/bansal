@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/hackney');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;800&display=swap');
+
+
+
+
+
+@media(max-width:500px) {
+    #pic1 {
+        position: absolute;
+        margin-left: -100px;
+        margin-top: -70px;
+    }
+
+    .rahul {
+        border-bottom: 2px solid black;
+        width: 390px;
+    }
+
+    #home h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    #home h2 span {
+        font-size: 30px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #home h3 {
+        text-align: center;
+    }
+
+    #home .bttn {
+        text-align: center;
+    }
+
+
+}
+
+
+#pic1 {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -80px;
+}
+
+
+h1 {
+    font-size: 120px;
+    /* font-family: 'Josefin Slab', serif; */
+    /* font-family: 'Londrina Outline', cursive; */
+    /* font-family: 'Poller One', cursive; */
+    font-family: 'Hackney', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Josefin Slab', serif; */
+    /* font-family: 'Iceland', cursive; */
+}
+
+h3 {
+    /* font-family: 'Josefin Slab', serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+}

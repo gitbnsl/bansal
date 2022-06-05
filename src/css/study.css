@@ -1,0 +1,66 @@
+.vr {
+    animation: side 3s infinite;
+    transition: 2s all;
+}
+
+.margin {
+    margin-top: 100px;
+}
+
+.list li {
+    text-align: center;
+    font-size: 22px;
+}
+
+.mar {
+    margin-top: -59px;
+}
+
+.mar1 {
+    margin-top: 20px;
+}
+
+.mar2 {
+    margin-top: 20px;
+}
+
+.mar4 {
+    margin-left: -470px;
+}
+
+@keyframes side {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-9px);
+    }
+
+    50% {
+        transform: translateY(17px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media(max-width:500px) {
+    #photo img {
+        margin-bottom: 100px;
+    }
+
+    .mar {
+        margin-top: -35px;
+    }
+
+    .mar1 {
+        margin-top: 0px;
+    }
+
+    .mar2 {
+        margin-top: 0px;
+    }
+
+}

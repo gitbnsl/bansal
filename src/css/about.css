@@ -1,0 +1,81 @@
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    /* animation-name: animawidth; */
+    /* transition: 10s all; */
+}
+
+
+
+
+.font {
+    font-size: 50px;
+    color: rgb(218, 38, 98);
+}
+
+.txt {
+    text-align: justify;
+    letter-spacing: 2px;
+    /* font-size: 20px; */
+}
+
+.bg1 {
+    /* background-color: aqua; */
+    animation: changecolor 2s infinite;
+    color: aqua;
+    border-radius: 2px;
+}
+
+@keyframes changecolor {
+    50% {
+        /* transform: translateX(0%); */
+        color: rgb(148, 96, 207);
+    }
+
+    100% {
+        color: aqua;
+    }
+}
+
+.progress-bar {
+    background: rgb(253, 2, 149);
+    border-radius: 10px;
+
+}
+
+.scrolled {
+    transition: 4s all;
+    animation: animawidth 4s;
+
+}
+
+@keyframes animawidth {
+
+    from {
+        width: 0;
+    }
+
+
+}
+
+.skill .hide {
+    display: none;
+}
+
+@media(max-width:500px) {
+
+    .skill h5 span {
+        display: none;
+    }
+
+    .skill .hide {
+        display: inline;
+    }
+
+
+    .skill {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

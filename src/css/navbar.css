@@ -1,0 +1,26 @@
+.logo {
+    /* transform: translate(0,180dg); */
+    /* transform: scale(1.2); */
+    /* transform: rotateX(180); */
+    /* border: 3px solid red; */
+    border: 0px;
+    transition: 0.8s ease-in-out;
+}
+
+.logo:hover {
+
+    transform: rotateZ(90deg);
+}
+
+
+
+
+.bg {
+    /* background-image: url('../images/png2.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100px; */
+    /* margin-left: -100px; */
+    /* justify-content: end; */
+    /* background-position: right; */
+
+}
