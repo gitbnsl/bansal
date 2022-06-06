@@ -4,7 +4,7 @@ import contact from '../images/svg.svg'
 import email from 'emailjs-com'
 
 
-import { Flip,ToastContainer, toast } from 'react-toastify';
+import { Flip, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -15,7 +15,8 @@ const Contact = () => {
     const [data, setData] = useState({
         name: "",
         email: "",
-        msg: ""
+        subject: "",
+        message: ""
     })
 
     const getData = (event) => {
@@ -25,17 +26,28 @@ const Contact = () => {
     }
 
     const sendEmail = (e) => {
-        // e.preventDefault();
-        console.log('click active')
+        e.preventDefault();
+        console.log('click active');
+
 
         email.sendForm('service_x3zc6nk', 'template_xh65ho7', form.current, 'tXYQhNSTkw49_VQSu')
             .then((result) => {
                 console.log(result.text);
                 toast.success('message send successfully');
+
             }, (error) => {
                 console.log(error.text);
                 toast.error('Failed to send message');
+
             });
+
+        setData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+
     }
     return (
         <>
@@ -64,25 +76,25 @@ const Contact = () => {
 
                                         <div className="col-lg-6">
                                             <div className="form-group contact-block1">
-                                                <input type="text" name="name" className="form-control" onChange={getData} id="name" placeholder="Your Name" required />
+                                                <input type="text" name="name" value={data.name} className="form-control" onChange={getData} id="name" placeholder="Your Name" required />
                                             </div>
                                         </div>
 
                                         <div className="col-lg-6">
                                             <div className="form-group">
-                                                <input type="email" className="form-control" name="email" onChange={getData} id="email" placeholder="Your Email" required />
+                                                <input type="email" className="form-control" value={data.email} name="email" onChange={getData} id="email" placeholder="Your Email" required />
                                             </div>
                                         </div>
 
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <input type="text" className="form-control" name="subject" onChange={getData} id="subject" placeholder="Subject" required />
+                                                <input type="text" className="form-control" value={data.subject} name="subject" onChange={getData} id="subject" placeholder="Subject" required />
                                             </div>
                                         </div>
 
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <textarea className="form-control" name="message" onChange={getData} placeholder="Message" required></textarea>
+                                                <textarea className="form-control" value={data.message} name="message" onChange={getData} placeholder="Message" required></textarea>
                                             </div>
                                         </div>
 

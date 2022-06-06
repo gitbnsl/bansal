@@ -6,7 +6,7 @@ import study from '../images/study.svg'
 const Study = () => {
     return (
         <>
-            <div className="container margin" data-aos="fade-right" id='study'>
+            <div className="container margin" data-aos="flip-right" id='study'>
                 {/* <h2 className='text-center'>Resume <hr /></h2> */}
                 <h4 className='text-center  fw-bold fs-2 py-5'>EDUCATION</h4>
 
